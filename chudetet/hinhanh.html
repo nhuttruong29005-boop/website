@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hình ảnh - Xuân Tiền Giang</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 32px;
+            color: #c40000;
+            margin-bottom: 30px;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+            transition: 0.4s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Video */
+        .video-title {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 26px;
+            color: #c40000;
+        }
+
+        .video-box {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin: 30px auto;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+        }
+
+        .video-box iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2 class="title">Album Tết quê</h2>
+
+    <div class="gallery">
+        <img src="https://img.vietcetera.com/wp-content/uploads/2018/02/Tetnguyendan_featured-1.jpg" alt="Tết 1">
+        <img src="https://2.bp.blogspot.com/-US809LjSqb8/VtUfR0l8QGI/AAAAAAAAA94/u2SBxF9QJgo/s1600/tet%2BVietnam%2B1.jpg" alt="Tết 2">
+        <img src="https://image.dienthoaivui.com.vn/x,webp,q90/https://dashboard.dienthoaivui.com.vn/uploads/dashboard/editor_upload/anh-tet-02.jpg" alt="Tết 3">
+    </div>
+
+    <h3 class="video-title">Video Tết</h3>
+
+<section class="hero-banner">
+
+    <iframe 
+        class="hero-video"
+        src="https://www.youtube.com/embed/ovYL9XMT3xA?autoplay=1&mute=1&loop=1&playlist=ovYL9XMT3xA"
+        frameborder="0"
+        allow="autoplay; fullscreen"
+        allowfullscreen>
+    </iframe>
+
+    <div class="hero-overlay"></div>
+
+</section>
+</div>
+
+</body>
+</html>
